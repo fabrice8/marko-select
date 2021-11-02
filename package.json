@@ -20,5 +20,8 @@
   ],
   "peerDependencies": {
     "marko": "^4.12.4 || ^5"
+  },
+  "dependencies": {
+    "marko-perfect-scrollbar": "^0.0.2"
   }
 }
