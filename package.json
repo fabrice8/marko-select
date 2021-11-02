@@ -1,6 +1,6 @@
 {
   "name": "marko-select",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Select Input control for MarkoJS",
   "repository": "https://github.com/fabrice8/marko-select",
   "author": "Fabrice K.M. Ekpetse <fabrice.xyclone@gmail.com>",
