@@ -66,5 +66,5 @@ License
 This software is free to use under the MIT license. See the [LICENSE file][] for license text and copyright information.
 
 
-[LICENSE file]: https://github.com/fabrice8/marko-intl-tel-input/blob/master/LICENSE
-[Issues here]: https://github.com/fabrice8/marko-intl-tel-input/issues
+[LICENSE file]: https://github.com/fabrice8/marko-select/blob/master/LICENSE
+[Issues here]: https://github.com/fabrice8/marko-select/issues
