@@ -1,0 +1,24 @@
+{
+  "name": "marko-select",
+  "version": "0.0.1",
+  "description": "Select Input control for MarkoJS",
+  "repository": "https://github.com/fabrice8/marko-select",
+  "author": "Fabrice K.M. Ekpetse <fabrice.xyclone@gmail.com>",
+  "license": "MIT",
+  "bugs": "https://github.com/fabrice8/marko-select/issues/new",
+  "files": [
+    "index.marko",
+    "marko.json",
+    "style.css"
+  ],
+  "homepage": "https://github.com/fabrice8/marko-select/tree/master",
+  "keywords": [
+    "marko",
+    "select",
+    "input",
+    "form"
+  ],
+  "peerDependencies": {
+    "marko": "^4.12.4 || ^5"
+  }
+}
