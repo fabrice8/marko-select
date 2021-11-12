@@ -22,6 +22,7 @@
     "marko": "^4.12.4 || ^5"
   },
   "dependencies": {
+    "@marko-tags/subscribe": "^0.4.3",
     "marko-perfect-scrollbar": "^0.0.2"
   }
 }

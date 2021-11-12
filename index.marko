@@ -50,7 +50,7 @@ class {
                   }
     }
   }
-  onMount({ autoFocus }){ if( autoFocus ) $( this.getEl('in-input') ).focus() }
+  onMount(){ if( this.input.autoFocus ) $( this.getEl('in-input') ).focus() }
 
   isActive(){
     const is_active = this.state.active || $( this.getEl('in-input') ).is(':focus') 
@@ -69,7 +69,9 @@ class {
       return
     }
 
-    if( input.searchable )
+    this.state.value = e.target.value
+
+    if( this.input.searchable )
       try {
         this.state.xOptions = this.state.options.filter( ({ label, value }) => {
                                 return new RegExp( '^'+ e.target.value, 'i' ).test( label || value )
@@ -89,12 +91,12 @@ class {
       // Navigate options up
       case 38: if( this.state.target > 0 ) this.state.target--; break
       // Navigate options down
-      case 40: if( this.state.target < options.length ) this.state.target++; break
+      case 40: if( this.state.target < options.length - 1 ) this.state.target++; break
     }
   }
   onIngore( e ){
     // Close option list at external click
-    if( !$(e.target).closest('#'+ this.selectIndex +'.select-input').length )
+    if( !$(e.target).closest('#'+ this.selectIndex +'.marko--select-input').length )
       this.state.active = false
   }
   onSelect( index ){
@@ -105,7 +107,7 @@ class {
     this.getEl('in-input').blur()
     this.state.active = false
 
-    this.emit( 'select', this.input.returnAll ? option : option.value )
+    this.emit( 'change', this.input.returnAll ? option : option.value )
   }
 }
 

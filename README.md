@@ -27,10 +27,12 @@ Then use it in your app:
         placeholder="Select Country"
         searchable=true
         options=[
-          label: "United State", value: "US",
-          label: "France", value: "FR"
+          { label: "United State", value: "US" },
+          { label: "France", value: "FR" }
         ]
-        on-change("onHandlerChange")/>
+        on-change("onHandlerChange")
+        on-menu-open( () => console.log('menu-open') )
+        on-menu-close( () => console.log('menu-close') )/>
 ```
 
 ## Inputs Properties
